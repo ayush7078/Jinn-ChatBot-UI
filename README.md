@@ -101,7 +101,10 @@ Feel free to check the issues page.
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 # Screenshots
-- Desktop View
+### Desktop View
+![Desktop View](./public/assets/Jinn-Chatbot.png)
 
-- Mobile View
+### Mobile View
+![Mobile View-1](./public/assets/Mobile-Responsive-1.jpg)
 
+![Mobile View-2](./public/assets/Mobile-Responsive-2.jpg)
