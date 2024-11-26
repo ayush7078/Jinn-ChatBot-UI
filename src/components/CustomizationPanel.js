@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../App.css";
 
 const CustomizationPanel = ({ customization, onChange }) => {
@@ -7,53 +7,38 @@ const CustomizationPanel = ({ customization, onChange }) => {
       onChange(name, value);
     };
 
-    const [fonts, setFonts] = useState([]);
-
-    useEffect(() => {
-      // Fetch fonts from Google Fonts API
-      const fetchFonts = async () => {
-        try {
-          const response = await fetch("https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyC2WLhvjJ-Wg--tUiTKeoyLllG3Y83uk3Q");
-          const data = await response.json();
-          setFonts(data.items);  // Save fonts list into state
-        } catch (error) {
-          console.error("Error fetching fonts:", error);
-        }
-      };
-  
-      fetchFonts();
-    }, []); // Run once on mount
-
     return (
       <div className="customization-panel">
         <h2>🔧 Customize Your ChatBot</h2>
         <p>Adjust the appearance and behavior of the ChatBot in real-time.</p>
   
         {/* Section for Button Icon, User Name, Demo Bot Text */}
-        {/* Chat Icon Size */}
-        <div className="section">
-          <h3>Button & Chat Icon</h3>
-          <label className="input-group">
-            <span>Chat Icon Font Size:</span>
-            <input
-              type="number"
-              name="chatIconfont"
-              value={customization.chatIconfont}
-              onChange={handleInputChange}
-              placeholder="e.g., 50"
-            />
-          </label>
-          <label className="input-group">
-            <span>Button Icon Font Size:</span>
-            <input
-              type="number"
-              name="buttonFontSize"
-              value={customization.buttonFontSize}
-              onChange={handleInputChange}
-              placeholder="e.g., 20"
-            />
-          </label>
-        </div>
+      {/* Chat Icon Size */}
+  <div className="section">
+    <h3>Button & Chat Icon</h3>
+    <label className="input-group">
+      <span>Chat Icon font</span>
+      <input
+        type="number"
+        name="chatIconfont"
+        value={customization.chatIconfont}
+        onChange={handleInputChange}
+        placeholder="e.g., 50"
+      />
+    </label>
+    <label className="input-group">
+      <span>Button Icon font:</span>
+      <input
+        type="number"
+        name="buttonIconHeight"
+        value={customization.buttonFontSize}
+        onChange={handleInputChange}
+        placeholder="e.g., 20"
+      />
+    </label>
+  
+  </div>
+  
   
         {/* Appearance Section with Title Background and Border Color side by side */}
         <div className="section">
@@ -78,7 +63,7 @@ const CustomizationPanel = ({ customization, onChange }) => {
               />
             </label>
           </div>
-
+  
           <div className="input-group">
             <span>Border Radius:</span>
             <input
@@ -89,21 +74,21 @@ const CustomizationPanel = ({ customization, onChange }) => {
               placeholder="E.g., '10px'"
             />
           </div>
-
+  
           <div className="input-group">
             <span>Font Family:</span>
-            <select name="fontFamily" value={customization.fontFamily} onChange={handleInputChange}>
-             {console.log("fonts", fonts)
-             }
-              {fonts && fonts.length > 0 ? (
-                fonts.map((font) => (
-                  <option key={font.family} value={font.family}>
-                    {font.family}
-                  </option>
-                ))
-              ) : (
-                <option value="Arial, sans-serif">Arial</option> 
-              )}
+            <select
+              name="fontFamily"
+              value={customization.fontFamily}
+              onChange={handleInputChange}
+            >
+              <option value="Arial, sans-serif">Arial</option>
+              <option value="Verdana, sans-serif">Verdana</option>
+              <option value="'Courier New', monospace">Courier New</option>
+              <option value="'Roboto', sans-serif">Roboto</option>
+              <option value="'Open Sans', sans-serif">Open Sans</option>
+              <option value="'Lora', serif">Lora</option>
+              <option value="'Montserrat', sans-serif">Montserrat</option>
             </select>
           </div>
         </div>
@@ -157,5 +142,5 @@ const CustomizationPanel = ({ customization, onChange }) => {
       </div>
     );
   };
-
-export default CustomizationPanel;
+  
+  export default CustomizationPanel;
