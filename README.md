@@ -52,19 +52,19 @@ http://localhost:3000
 
 
 # Project Structure
-├── public
-│   ├── index.html
-│   └── favicon.ico
-├── src
-│   ├── components
-│   │   ├── ChatBot.js          # Chatbot Component
-│   │   ├── CustomizationPanel.js # Customization Panel Component
-│   ├── App.css                 # Styles
-│   ├── App.js                  # Main Application
-│   ├── index.js                # Entry Point
-├── README.md                   # Documentation
-├── package.json                # Project Metadata
-└── node_modules                # Dependencies
+- ├── public
+- │   ├── index.html
+- │   └── favicon.ico
+- ├── src
+- │   ├── components
+- │   │   ├── ChatBot.js          # Chatbot Component
+- │   │   ├── CustomizationPanel.js # Customization Panel Component
+- │   ├── App.css                 # Styles
+- │   ├── App.js                  # Main Application
+- │   ├── index.js                # Entry Point
+- ├── README.md                   # Documentation
+- ├── package.json                # Project Metadata
+- └── node_modules                # Dependencies
 
 
 # Customization Options
