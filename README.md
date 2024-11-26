@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+## Customizable Chatbot Application
+This project is a responsive customizable chatbot application that allows users to adjust various visual elements of the chatbot interface in real-time. It is built with React and includes features like customizable chat bubbles, title bar, and fonts. The layout is fully responsive for both desktop and mobile devices.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Features
+- Customizable Chatbot UI:
 
-## Available Scripts
+1. Change the title bar background color and border color.
+2. Adjust border radius for rounded corners.
+3. Customize chat bubble colors and text colors for both user and bot.
+4. Update fonts used across the application.
+5. Resize button icons and chat icons dynamically.
 
-In the project directory, you can run:
+- Responsive Design:
+1. Desktop, tablet, and mobile-friendly layout.
+2. Chatbot and customization panel adapt seamlessly to different screen sizes.
 
-### `npm start`
+- Interactive UI:
+1. Real-time preview of customization changes.
+2. Input fields and color pickers for easy adjustments.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Table of Contents
+- Installation
+- Usage
+- Project Structure
+- Customization Options
+- Technologies Used
+- License
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Installation
+1. Clone the repository:
+git clone https://github.com/ayush7078/Jinn-ChatBot-UI.git
+cd Jinn-ChatBot-UI
 
-### `npm run build`
+2. Install dependencies: Make sure you have Node.js installed, then run:
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Start the development server:
+npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Open your browser and go to:
+http://localhost:3000
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Usage
+1. Customize the Chatbot:
+- Use the panel on the left to adjust settings like colors, border radius, and font styles.
+- The changes will reflect instantly in the chatbot preview on the right.
 
-### `npm run eject`
+2. Test Responsiveness:
+- Resize your browser window or test on different devices to see the responsive layout in action.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Project Structure
+├── public
+│   ├── index.html
+│   └── favicon.ico
+├── src
+│   ├── components
+│   │   ├── ChatBot.js          # Chatbot Component
+│   │   ├── CustomizationPanel.js # Customization Panel Component
+│   ├── App.css                 # Styles
+│   ├── App.js                  # Main Application
+│   ├── index.js                # Entry Point
+├── README.md                   # Documentation
+├── package.json                # Project Metadata
+└── node_modules                # Dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Customization Options
+The chatbot's appearance can be customized using the following parameters:
 
-## Learn More
+1. Title Bar:
+- Background color
+- Border color
+- Border radius
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Chat Bubbles:
+- Bot bubble background color
+- Bot text color
+- User bubble background color
+- User text color
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Icons:
+- Chat icon font size
+- Button icon font size
 
-### Code Splitting
+4. Font Styles:
+- Select from predefined fonts (Arial, Verdana, Courier New, etc.).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Technologies Used
+- React: Component-based front-end library.
+- CSS: Custom styles for responsiveness and theming.
+- HTML: Structuring the UI.
 
-### Analyzing the Bundle Size
+# Contributing
+Contributions, issues, and feature requests are welcome!
+Feel free to check the issues page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-### Making a Progressive Web App
+# Screenshots
+- Desktop View
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Mobile View
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
